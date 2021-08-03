@@ -208,6 +208,7 @@ float: left;
   width:235px;
   border-radius:25px 25px 0px 0px;
   margin:5px;
+  overflow:hidden;
   
 }
 .note /*attribtus notation*/
@@ -249,6 +250,7 @@ a
   height: 145px;
   border-radius: 25px 0px 0px 25px;
   overflow: hidden;
+ 
 }
 .imageBulle /*conteneur images*/
 {
@@ -258,14 +260,12 @@ a
   border-radius: 25px ;
   margin:25px;
 }
-/*.organisationText
-{
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+organisationText
+{display: flex;
+  justify-content: right;
   width: 140px; 
   padding:20px;
-}*/
+}
 
 /*activités*/
 .cadrePhotoActivités /*cadre photo*/
@@ -281,9 +281,8 @@ a
 {
  width: 300px;
  height: 380px;
- max-width: 100%;
- max-height: 100%;
 border-radius:25px 25px 0px 0px;
+overflow:hidden;
 }
 .cadrePhotoMoyenact
 {
@@ -300,6 +299,7 @@ border-radius:25px 25px 0px 0px;
   height:180px;
   overflow:hidden;
   border-radius: 25px 25px 0px 0px;
+  overflow:hidden;
 }
 .CadreACtFriou
 {
@@ -315,6 +315,7 @@ border-radius:25px 25px 0px 0px;
   width:300px;
   height: 105px;
   border-radius: 25px 25px 0px 0px;
+  overflow:hidden;
 }
 .cadreActND
 { 
@@ -330,6 +331,7 @@ border-radius:25px 25px 0px 0px;
   width:300px;
   height: 130px;
   border-radius: 25px 25px 0px 0px;
+  overflow:hidden;
 }
 .cadreActPrcLC
 {
@@ -357,7 +359,7 @@ border-radius:25px 25px 0px 0px;
   background-color: #f2f2f2;
   }
   .taillebloc
-  {widht:100%;
+  {width:100%;
   }
 .margesFooter
 {
