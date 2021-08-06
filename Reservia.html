@@ -13,15 +13,15 @@
     
     <body>
         <div id=corpsdepage>
-          <header>
+          <header id=header>
             <div class="flexSpaceBetweecenter">
                         <img src="images/logo/Reservia@3x.png" id=logo>
                   <nav>
                     <div class="espacement flexAround">
                    
-                      <div class="margin20px"> <a class=" textDecoLiens textcouleurlien2" href='#herbergement'>hebergement</a>  </div>
-                      <div class="margin20px "><a class="textDecoLiens textCouleurLien" href="#activités">activités</a> </div>
-                      <div class="margin20px "><a class="textDecoLiens textcouleurlien2 texteGras" href="s'inscrire.html">S'inscrire</a></div>
+                      <div class="margin20px"> <a class="textcouleurlien2" href='#herbergement'>hebergement</a>  </div>
+                      <div class="margin20px "><a class="textCouleurLien" href="#activités">activités</a> </div>
+                      <div class="margin20px "><a class="textcouleurlien2 texteGras" href="s'inscrire.html">S'inscrire</a></div>
                     
                     </div>
                     </nav>
@@ -68,7 +68,7 @@
             </header>
             
             <section class="flexSpaceBetween">
-            <div class="cadreherbergement">
+            <div id=cadreherbergement>
                 <div class= "margeInterieure" >
                     <h2> Herbergements a Marseille </h2>
                     <div class="flexWarp ">
@@ -150,8 +150,8 @@
                 
             </div>
             
-            <aside class="side margeInterieure ">
-                    <div class="flexAround margetitre"><h2> Les plus populaires </h2>
+            <aside id=CadreMenuAside>
+                    <div class="flexAround margeInterieure"><h2> Les plus populaires </h2>
                     <i class="fas fa-chart-line"></i></div>
                     <div class="flexColumn">
                     <div class="imageBulle">
@@ -206,7 +206,7 @@
             <section>
                 <div>
                     <div><h2><strong>Activités a Marseille</strong></h2></div>
-                <div  class="flexSpaceBetween ">
+                <div  class="flexAround ">
                     <div class="cadrePhotoActivités margin20px">
                     <a href="#">
                         <img class="imagesactivitésGrande" src="images/activites/4_small/vieuxport.jpg" alt="Vieux port de Marseille">
@@ -250,22 +250,22 @@
             </div>
         </div>
             </section>
-                <footer><div class="footer flexSpaceBetween  margesFooter">
+                <footer><div class="footer menuFooter  margesFooter">
                     <nav>
-                        <div class="flexColumn">
+                        <div class="sousmenuFooter">
                             <strong>A Propos</strong>                          
                             <a href="#">Fonctionnement du site</a>
                             <a href="#">Conditions générales de vente </a>
                             <a href="#">Données et confidancialitée</a>
                             
-                        </div>
-                        <div class="flexColumn">
+                        </div class="sousmenuFooter">
+                        <div>
                             <strong>Nos hébergements</strong>
                             <a href="#">Charte Qualitée</a>
                             <a href="#">Soumettre votre Hôtel</a>
                         
                         </div>
-                        <div class="flexColumn">
+                        <div class="sousmenuFooter">
                             <strong>Assistance</strong>
                             <a href="#">Centre d'aide</a>
                             <a href="#"> Nous contacter</a>

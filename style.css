@@ -189,7 +189,7 @@ float: left;
 
 }
 /*premiere section*/
-.cadreherbergement /*cadre général herbergement*/
+#cadreherbergement /*cadre général herbergement*/
 {
   background-color: #f2f2f2;
   border-radius:25px;
@@ -197,10 +197,13 @@ float: left;
   width:60%;
   height: auto;
   display:flex;
-
 }
+
 .margeInterieure
-{margin:0px 40px 0px 40px;}
+
+{
+  margin:0px 40px 0px 40px;
+}
 
 .cadre /*cadre contenant l'image*/
 {
@@ -217,8 +220,7 @@ float: left;
   width:235px;
   border-radius:25px 25px 0px 0px;
   margin:5px;
-   
-  }
+ }
   
 .note /*attribtus notation*/
 {
@@ -243,11 +245,12 @@ float: left;
 {
   margin: 40px 40px 0px 40px;
 }
-.side /*bulle principale*/
+#CadreMenuAside /*bulle principale*/
 {
   background-color: #f2f2f2;
   width: 30%;
   border-radius:25px;
+  margin:0px 40px 0px 40px;
 }
 .imageside /*images*/
 {
@@ -349,9 +352,7 @@ overflow:hidden;
   background-color: white;
   width:300px;
   height:210px;
- 
-}
-
+ }
 .photoPrcLC
 {
   width:300px;
@@ -359,7 +360,7 @@ overflow:hidden;
   border-radius: 25px 25px 0px 0px;
   overflow:hidden;
 }
-/*fotter*/
+/*footer*/
 .footer
 {
   background-color: #f2f2f2;
@@ -372,7 +373,42 @@ overflow:hidden;
   margin-top:50px;
   padding-top:50px;
 }
-.list
+.menuFooter
 {
-  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.sousmenuFooter
+{
+  display: inline-block;
+  flex-direction: column;
+  
+}
+@media all and ( max-width: 1280px)
+{
+  #corpsdepage
+  {
+    margin-top:30px;
+    width: auto;
+  }
+  #logo
+  {
+    float: left;
+    margin-left:20px;
+    width:25%;
+  }
+  header
+  {
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: auto;
+    max-width: 100%;
+    }
+   #indcrip
+   {
+     justify-content: right;
+     align-content: flex-end;
+   }
 }
