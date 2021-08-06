@@ -12,13 +12,14 @@
         <div id="corpsdepage">
             <!--menu d'en tete avec logo-->
           <header>
-              
+
                   <img src="images/logo/Reservia@3x.png" alt="logo reservia" id="logo"/>
                   <nav id=Entete>
-                  <a href="#" id=inscription>S'inscire</a>
+                 
                 <ul id=menuentete>
-                      <li><a href='#herbergement'>hebergement</a>  
-                      <li><a href="#activités">activités</a> 
+                      <div class="margin"><a href='#herbergement'>hebergement</a>  </div>
+                      <div class="margin"> <li class="maring"><a href="#activités">activités</a> </div>
+                      <div class="margin"> <li class="maring"><a href="#" id=inscription>S'inscire</a></li></div>
                 </ul>
               </nav>
             </header>
@@ -26,17 +27,27 @@
                       <p id="intro"> <strong> découvrez votre hébergement pour des vacances de rêve </strong><br>
                         en plein centre ville ou en pleine nature </p>
                         <form method="POST">
-                            <input type="search" name="recherche" id="recherche"/>
+                            <div id=bouttonrecherche>    
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="search" name="recherche" id=champderecherche/>
+                            <button>recherche</button>
+                        </div>
                         </form>
-                        <form method="POST" id="options">
-                            <p> option </p>
-                            <input type="radio" name="Economique" value="Economique" id="Economique"><label for="Economique">Economique</label>
-                            <input type ="radio" name="familial" value="familial" id="familial"><label for="familial">Familial </label>
-                            <input type="radio" name="romantique" value="romantique" id="romantique"> <label for="romantique"> Romantique </label>
-                            <input type="radio" name="animaux" value="animaux" id="animaux"><label for="animaux"> Animaux autorisé </label>
-                        </form>
-                        <p id="info"> plus de 500 logements sont disponibles </p>
+                        <!--selecteurs-->
             </section>
+                            <section id=filtres>
+                            <h4> filtre </h4>
+                            <li><i class="fas fa-money-bill-wave"></i>
+                            <h4>Economique</h4></li>
+                            <li><i class="fas fa-child"></i>
+                            <h4>Familial</h4></li>
+                            <li><i class="fas fa-heart"></i>
+                            <h4> Romantique</h4></li>
+                            <li><i class="fas fa-dog"></i>
+                            <h4> Animaux autorisé </h4></li>
+                        </section>
+                        
+                        <p id="info">  <i class="fas fa-info infoPoint"></i>plus de 500 logements sont disponibles </p>
             
             <!--corps principal de la page-->
             <main>
@@ -100,6 +111,7 @@
                         </a>
                     </div>
             </aside>
+        </main>
             <!-- section activitées-->
             <section id="activités">
                     <h2><strong>Activités a Marseille</strong></h2>
@@ -140,7 +152,7 @@
                     </a>
                 </div>
             </section>
-        </main>
+        
         <!--section de bas de page-->
                 <footer>
                     <nav>

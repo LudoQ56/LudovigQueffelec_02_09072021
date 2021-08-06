@@ -1,38 +1,261 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+.margin
+{
+    margin:20px;
 
+}
+li{
+    list-style: none;
+}
 body
 {
     font-family: Raleway;
 
 }
+a{
+    text-decoration: none;
+    color:black;
+}
 header
 {
     display:flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 #logo
 {
     width:100px;
+    height:50px;
     margin-left:20px;
     margin-top:50px;
 }
 #inscription
 {
-    display: flex;
-    align-items: center;
-    margin-top:50px;
-    margin-right:15px;
-
+  color: #0065fc;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 75px;
 }
 #menuentete
 {
-    list-style: none;
-    text-decoration: none;
+   
     display: flex;
-    align-items: flex-end;
+    flex:1;
+    align-items: center;
     margin-right:100px;
+    height:75px;
+    justify-content: space-between;
+    margin:20px;
+    border:solid 2px black;
+    }
+    .a
+    {margin-left:20px;
+     padding-left:20px;
+    }
+    #intro
+    {
+        margin-left:20px;
+    }
+    strong
+    {
+        font-weight: bolder;
+    }
+    #bouttonrecherche
+    {
+        display: flex;
+        justify-content: center;
+        width:420px;
+        height:50px;
+        border-radius: 15px;
+        margin:20px;
+        border:1px solid #f2f2f2
+
+               
+    }
+    #bouttonrecherche i
+    {   display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DEEBFF;
+        width:50px;
+        height:50px;
+        background-color: #f2f2f2;
+        border-radius: 10px 0px 0px 10px;
+    }
+    #bouttonrecherche input
+    {
+        border: none;
+        height:50px;
+        width:220px;
+        font-weight: bold;
+        font-size:1.2em;    
+        font-family: Raleway;
+    }
+
+    #bouttonrecherche button
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:50px;
+        width:130px;
+        background-color: #0065FC;
+        border:none;
+        color:white;
+        border-radius: 0px 10px 10px 0px;
+        font-family: Raleway;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+#filtres
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:65%;
+}
+#filtres li
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:solid #f2f2f2 2px;
+    border-radius:25px;
+    height:50px;
+}
+#filtres i
+{
+ background-color: #0065FC;
+ color:#f2f2f2;
+ border-radius:25px;
+ width:50px;
+ height: 50px;
+ z-index: 1;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#filtres h4{
+    font-weight: bold;
+    margin:10px;
+}
+#info
+{
+    margin:20px;
+    padding:10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+#info i
+{   
+    height: 20px;
+    width: 20px;
+    color:#0065fc;
+    margin-left:5px;
+    border:2px solid #f2f2f2;
+    border-radius: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+main{
+    display: flex;
+    align-content: space-between;
+}
+#Herbergements
+{
+    width:61%;
+    background-color: #f2f2f2;
+    border-radius:25px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#Herbergements h2
+{
+    display: inline-block;
+    width:100%;
+    margin-top:20px;
     margin-left:20px;
+}
+#Herbergements div
+{   display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 245px;
+    height: 200px;
+    margin:20px;
+    z-index: 2;
+    padding:5px;
+
+}
+#Herbergements img
+{
+    width:235px;
+    height:135px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 1;
+}
+#pop
+{   margin:20px;
+    width: 27%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius:25px;
+}
+#pop h2
+{width:100%;
+}
+#pop div
+{
+    background-color: white;
+    width: 82%;
+    height:145px;
+    display: flex;
+    align-content: flex-start;
+    margin:10px;
+    border-radius: 25px;
+    }
+#pop img
+{
+    width:125px;
+    height:135px;
+    object-fit: cover;
+    padding:5px;
+    border-radius:25px 0px 0px 25px;
+}
+#pop p
+{
+    display:inline-block;
+    vertical-align: top;
+    margin-bottom:20px;
+}
+#activités
+{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#activités div
+{
+    background-color: white;
+    width:21%;
+    height:
+}
+#activités img
+{
+    
 
 }
