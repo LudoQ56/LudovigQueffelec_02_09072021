@@ -10,7 +10,7 @@ li{
 body
 {
     font-family: Raleway;
-
+   
 }
 a{
     text-decoration: none;
@@ -48,6 +48,8 @@ header
     justify-content: space-between;
     margin:20px;
     border:solid 2px black;
+    position: absolute;
+    left:980px;
     }
     .a
     {margin-left:20px;
@@ -192,6 +194,7 @@ main{
     margin:20px;
     z-index: 2;
     padding:5px;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.39);
 
 }
 #Herbergements img
@@ -206,7 +209,7 @@ main{
     z-index: 1;
 }
 #pop
-{   margin:20px;
+{   margin:40px;
     width: 27%;
     display: flex;
     align-content: center;
@@ -226,6 +229,7 @@ main{
     align-content: flex-start;
     margin:10px;
     border-radius: 25px;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.39);
     }
 #pop img
 {
@@ -240,22 +244,101 @@ main{
     display:inline-block;
     vertical-align: top;
     margin-bottom:20px;
+    position: absolute;
+    flex-wrap: wrap;
+    width:135px;
 }
 #activités
 {
     display: flex;
-    align-content: space-around;
+    align-items: flex-end;
     flex-wrap: wrap;
+    width:94%;
     
+   
+    
+}
+.activités_colone
+{
+    display: flex;
+    flex-direction: column;
+    }
+#activités h2
+{
+    width: 100%;
+    display: inline-block;
+    align-content: flex-start;
+    margin-bottom: 20px;
 }
 #activités div
 {
-    background-color: white;
-    width:21%;
-    height:
+    display: flex;
+    justify-content: start;
+    margin-top:40px;
+    margin-left:20px
 }
 #activités img
 {
+    display: flex;
+    width:300px;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 25px 25px 0px 0px;;
     
+}
+#activités p
+{
+    width: 300px;
+    height:55px;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.39);
+    margin-top:0px;
+}
 
+/*balises images*/
+.vieuxport{
+    height:390px;
+   
+}
+.fortpaumegues
+{
+    height:180px;
+   
+}
+.ilesfrioul
+{
+    height: 110px;
+}
+.Calanques
+{
+    height:390px
+}
+.NDdelaGarde
+{
+    height:140px;
+}
+.Parclongchamp
+{
+    height:150px
+}
+/*footer*/
+footer{
+    background-color: #f2f2f2;
+}
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    
+}
+footer ul
+{
+    display: inline-block;
+    flex-direction: column;
+    align-items: baseline;
+    width:20%;
+}
+@media  screen and (max-width: 1080px);{
+    
+    
 }
