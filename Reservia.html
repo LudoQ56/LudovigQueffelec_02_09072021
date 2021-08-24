@@ -19,17 +19,19 @@
                 <img src="images/logo/Reservia@3x.png" alt="logo reservia" id="logo" />
 
 
-                <ul id=menuentete>
-                    <li class="margin"><a href='#Herbergements' id=lienHerbergement>hebergement</a> </li>
 
-                    <li class="margin"><a href="#activités" id=lienactivités>activités</a></li>
+                <p class="margin premierlien colorBlue"><a href='#Herbergements' id=lienHerbergement>hebergement</a> </p>
+
+                <p class="margin secondlien"><a href="#activités" id=lienactivités>activités</a></p>
 
 
-                    <li class="maring"><a href="#" id=inscription>S'inscire</a></li>
+                <p class="maring troisiemelien colorBlue"><a href="#" id=inscription>S'inscire</a></p>
 
-                </ul>
-                <div id=bordurebleue50></div>
-                <div id=boduregrise50></div>
+
+                <div id=bordures>
+                    <div id=bordurebleue50></div>
+                    <div id=borduregrise50></div>
+                </div>
             </nav>
 
         </header>
@@ -37,10 +39,11 @@
             <p id="intro"> <strong> Trouvez votre hébergement pour des vacances de rêve </strong><br> en plein centre ville ou en pleine nature </p>
             <form method="POST">
                 <div id=bouttonrecherche>
-                    <i class="fas fa-map-marker-alt "></i>
+                    <i class="fas fa-map-marker-alt firsticon"></i>
                     <input type="search" name="recherche" id=champderecherche />
-                    <button> recherche </button>
+                    <button> recherche  </button>
                     <i class="fas fa-search loupei"></i>
+
 
                 </div>
             </form>
@@ -71,8 +74,11 @@
         <!--corps principal de la page-->
         <main>
             <section id=hebergements>
-                <h2> Herbergements a Marseille </h2>
 
+
+                <div>
+                    <h2> Herbergements a Marseille </h2>
+                </div>
                 <div id=cannebiere>
                     <a href="#">
                         <img src="images/hebergements/1_xlarge/cannebiere.jpg" alt="auberge de la cannebiere" id="image" />
@@ -144,10 +150,13 @@
                             <i class="fas fa-star colorBlue"></i>
                         </p>
                     </a>
-
+                </div>
+                <div id=plus>
+                    <h4>afficher plus</h4>
                 </div>
 
-                <h4>afficher plus</h4>
+
+
             </section>
             <!-- seciton populaire-->
             <aside id="pop">
@@ -202,20 +211,20 @@
             <h2><strong>Activités a Marseille</strong></h2>
             <div>
 
-                <article class="grandecolonne">
+                <article class="grandecolonne premierelement">
                     <a href="#">
-                        <img src="images/activites/4_small/vieuxport.jpg" alt="Vieux port de Marseille" class="Grandeimage">
+                        <img src="images/activites/4_small/vieuxport.jpg" alt="Vieux port de Marseille" class="Grandeimage vieuxport">
                         <p><strong>Le vieux Port</strong></p>
                     </a>
                 </article>
 
-                <article class="petitecolonne">
+                <article class="petitecolonne deuxiemeelement">
                     <a href="#">
                         <img src="images/activites/4_small/FortPaumegues.jpg" alt="le fort de Paumègues" class="fortpaumegues">
                         <p><strong>Fort de Paumègues</strong></p>
                     </a>
                 </article>
-                <article class="petitecolonne margintop">
+                <article class="petitecolonne margintop troisiemeelement">
                     <a href="#">
                         <img src="images/activites/4_small/ilesFrioul.jpg" alt="Les iles du Frioul" class="ilesfrioul">
                         <p><strong>iles du Frioul</strong></p>
@@ -223,7 +232,7 @@
 
                 </article>
 
-                <article class="grandecolonne">
+                <article class="grandecolonne quatriemeelement">
 
                     <a href="#">
                         <img src="images/activites/4_small/Calanques.jpg" alt="le parc des Calanques" class="Grandeimage">
@@ -231,7 +240,7 @@
                     </a>
                 </article>
 
-                <article class="petitecolonne">
+                <article class="petitecolonne cinquiemeelement">
                     <a href="#">
                         <img src="images/activites/4_small/Notredamedelagarde.jpg" alt="Notre Dame de la Garde" class="NDdelaGarde">
                         <p><strong>Notre Dame de la Garde</strong></p>
@@ -239,7 +248,7 @@
                 </article>
 
 
-                <article class="petitecolonne margintop">
+                <article class="petitecolonne margintop sixiemeelement">
                     <a href="#">
                         <img src="images/activites/4_small/parclongchamp.jpg" alt="Le parc Longchamp" class="Parclongchamp">
                         <p><strong>Le parc Longchamp</strong></p>
@@ -251,23 +260,23 @@
         <!--section de bas de page-->
         <footer>
             <nav>
-                <ul>
-                    <li>
-                        <h4>A Propos</h4>
-                        <li> <a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales de vente </a></li>
-                        <li><a href="#">Données et confidancialitée</a></li>
+                <ul id=apropos>
+
+                    <h4>A Propos</h4>
+                    <li> <a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente </a></li>
+                    <li><a href="#">Données et confidancialitée</a></li>
                 </ul>
-                <ul>
-                    <li>
-                        <h4>Nos hébergements</h4>
+                <ul id=menuheb>
+
+                    <h4>Nos hébergements</h4>
                     </li>
                     <li><a href="#">Charte Qualitée</a></li>
                     <li><a href="#">Soumettre votre Hôtel</a></li>
                 </ul>
-                <ul>
-                    <li>
-                        <h4>Assistance</h4>
+                <ul id=assist>
+
+                    <h4>Assistance</h4>
                     </li>
                     <li><a href="#">Centre d'aide</a></li>
                     <li><a href="#"> Nous contacter</a></li>
