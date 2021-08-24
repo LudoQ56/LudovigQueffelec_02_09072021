@@ -237,7 +237,7 @@
                 grid-row-start: 1;
                 grid-row-end: 4;
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 5.62rem 1fr 1fr 1.625rem;
+                grid-template-rows: 5.62rem 13rem 13rem 1.25rem;
                 grid-gap: 1.62rem;
                 ;
             }
@@ -272,8 +272,7 @@
                 justify-self: flex-start;
             }
             
-            #hebergements h2 {
-                display: block;
+            #titre {
                 grid-row: 1/2;
                 grid-column: 1/4;
             }
@@ -308,21 +307,22 @@
                 grid-row: 3/4;
             }
             
-            #hebergements h4 {
+            #plus {
                 grid-column: 1/3;
                 grid-row: 4/5;
-                margin: 2.8rem;
+                margin-left: 1.25rem;
             }
             /*section populaire*/
             
             #pop {
                 width: 30%;
+                height: auto;
                 background-color: #f2f2f2;
                 border-radius: 25px;
                 display: grid;
                 grid-row-start: 1;
                 grid-row-end: 5;
-                grid-template-rows: 5.62rem 1fr 1fr 1fr;
+                grid-template-rows: 5.62rem 11.5625rem 11.5625rem 11.5625rem;
                 grid-template-columns: 1fr;
                 padding: 1.32rem;
             }
@@ -474,26 +474,31 @@
             }
             /*footer*/
             
-            footer {
-                background-color: #f2f2f2;
-            }
-            
             footer nav {
-                display: flex;
-                justify-content: space-between;
-                align-content: baseline;
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                width: 100%;
             }
             
-            footer ul {
-                display: inline-block;
-                flex-direction: column;
-                align-items: baseline;
-                width: 20%;
+            #apropos {
+                grid-column: 1/2;
+            }
+            
+            #menuheb {
+                grid-column: 2/3;
+            }
+            
+            #assist {
+                grid-column: 3/4;
+            }
+            
+            footer h4 {
+                margin-left: 2.5rem;
             }
             /* media queries*/
             
-            @media screen and (min-width:768px) and (max-width:1024px) {
-                #flitres {
+            @media screen and (min-width:480px) and (max-width:1024px) {
+                #filtres {
                     grid-template-rows: 1fr 1fr 1fr;
                     grid-template-columns: 4.37rem 1fr 1fr 1fr;
                 }
@@ -519,10 +524,11 @@
                 }
                 main {
                     justify-content: space-around;
+                    flex-wrap: wrap;
                 }
                 #hebergements {
                     grid-gap: 1rem;
-                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 3.125rem 1fr 1fr 1fr 3.125rem;
                     grid-template-columns: 50% 50%;
                 }
                 #hebergements h2 {
@@ -559,6 +565,8 @@
                 }
                 #pop {
                     padding: 1rem;
+                    grid-template-rows: 3.125rem 15rem 15rem 15rem;
+                    grid-gap: 1.625rem;
                 }
                 #pop a {
                     grid-template-columns: 1fr;
@@ -645,7 +653,78 @@
                 }
             }
             
-            @media screen and (min-width:480) and (max-width:768px) {}
+            @media screen and (min-width:480px) and (max-width:800px) {
+                #activités {
+                    height: auto;
+                }
+                #activités div {
+                    max-width: 100%;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-gap: 1.25rem;
+                    height: auto;
+                }
+                .premierelement {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+                .deuxiemeelement {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                .troisiemeelement {
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                }
+                .quatriemeelement {
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+                .cinquiemeelement {
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                }
+                .sixiemeelement {
+                    grid-column: 2/2;
+                    grid-row: 3/4;
+                }
+                #activités a {
+                    display: grid;
+                    grid-row-start:
+                }
+                #activités a {
+                    display: grid;
+                    grid-row-start: 1;
+                    grid-row-end: 2px;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-template-rows: 11.25rem 3.12rem;
+                    grid-template-columns: auto;
+                }
+                #activités img {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    height: 11.25rem;
+                }
+                #activités p {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                .margintop {
+                    margin: 0rem;
+                }
+                #hebergements {
+                    width: 50%;
+                }
+                .ilesfrioul {
+                    margin-top: 0rem;
+                }
+                footer {
+                    margin-top: 4.5rem;
+                    height: auto;
+                }
+            }
             
             @media screen and (max-width:480px) {
                 #corpsdepage {
@@ -865,18 +944,27 @@
                     width: 100%;
                 }
                 #apropos {
+                    grid-column: 1/2;
                     grid-row: 1/2;
                     width: 100%;
                 }
                 #menuheb {
+                    grid-column: 1/2;
                     grid-row: 2/3;
                     width: 100%;
                 }
                 #assist {
+                    grid-column: 1/2;
                     grid-row: 3/4;
                     width: 100%;
                 }
                 footer a {
                     color: black;
+                }
+                footer ul {
+                    width: 100%;
+                }
+                footer h4 {
+                    margin-left: 2.4rem;
                 }
             }
