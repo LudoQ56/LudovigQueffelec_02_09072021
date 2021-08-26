@@ -1,958 +1,1143 @@
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-            .margin {
-                margin: 20px;
-            }
-            
-            .colorBlue {
-                color: #0065fc
-            }
-            
-            .colorGrey {
-                color: #f2f2f2
-            }
-            
-            li {
-                list-style: none;
-            }
-            
-            body {
-                font-family: Raleway;
-                font-size: 16px;
-            }
-            
-            a {
-                text-decoration: none;
-            }
-            
-            #corpsdepage {
-                margin: 1.25rem;
-            }
-            
-            nav {
-                display: grid;
-                width: 100%;
-                grid-template-columns: 61% 13% 13% 13%;
-            }
-            
-            #logo {
-                width: 6.25rem;
-                height: 3.17rem;
-                grid-column: 1/2
-            }
-            
-            .premierlien {
-                grid-column: 2/3;
-                justify-self: right;
-            }
-            
-            .secondlien {
-                grid-column: 3/4;
-                justify-self: right;
-            }
-            
-            .troisiemelien {
-                grid-column: 4/5;
-                justify-self: center;
-                align-self: center;
-                font-weight: bolder;
-                color: #0065FC;
-            }
-            
-            .a {
-                margin-left: 1.25rem;
-                padding-left: 1.25rem;
-            }
-            
-            strong {
-                font-weight: bolder;
-            }
-            
-            #bouttonrecherche {
-                display: grid;
-                grid-template-columns: 12% 56% 32%;
-                width: 26.25rem;
-                height: 3.125rem;
-                border-radius: 15px;
-                padding: 0px;
-                border: 1px #f2f2f2 solid;
-            }
-            
-            .firsticon {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #DEEBFF;
-                width: 100%;
-                height: 3.125rem;
-                background-color: #f2f2f2;
-                border-radius: 15px 0px 0px 15px;
-                margin: 0px;
-                z-index: 1;
-                grid-column: 1/2;
-            }
-            
-            #bouttonrecherche input {
-                border: none;
-                height: 3.125rem;
-                width: 100%;
-                font-weight: bold;
-                font-size: 1.2em;
-                font-family: "Raleway";
-                margin: 0px;
-                border-top: 1px solid #f2f2f2;
-                border-bottom: 1px solid #f2f2f2;
-                grid-column: 2/3;
-            }
-            
-            #bouttonrecherche button {
-                align-items: center;
-                justify-content: center;
-                height: 3.125rem;
-                width: 100%;
-                background-color: #0065FC;
-                border: none;
-                color: white;
-                border-radius: 0px 15px 15px 0px;
-                font-family: "Raleway";
-                font-size: 1.2em;
-                font-weight: bold;
-                margin: 0px;
-                z-index: 1;
-                grid-column: 3/4;
-            }
-            
-            .loupei {
-                display: flex;
-                visibility: hidden;
-                background-color: #0065fc;
-                color: white;
-                border-radius: 15px 15px 15px 15px;
-                justify-content: center;
-                align-items: center;
-                width: 3.125rem;
-                height: 3.125rem;
-            }
-            
-            #filtres ul :hover {
-                box-shadow: 5px 5px 15px 5px #000000;
-            }
-            
-            #flitres li :hover {
-                box-shadow: none;
-            }
-            
-            #filtres i :hover {
-                box-shadow: none;
-            }
-            
-            #filtres {
-                display: inline-grid;
-                grid-template-columns: 4.37rem 1fr 1fr 1fr 1fr;
-                width: 65%;
-                margin-top: 1.875rem;
-                grid-column-gap: 1.625rem;
-            }
-            
-            #filtres div {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                border: solid #f2f2f2 3px;
-                border-radius: 25px;
-                height: 3.125rem;
-            }
-            
-            #filtres i {
-                background-color: #0065FC;
-                color: #f2f2f2;
-                border-radius: 25px;
-                width: 3.25rem;
-                height: 3.25rem;
-                z-index: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            #filtres h4 {
-                font-weight: bold;
-                justify-self: left;
-            }
-            
-            #eco {
-                grid-column: 2/3;
-                width: 11.875rem;
-            }
-            
-            #fam {
-                grid-column: 3/4;
-                width: 9.375rem;
-            }
-            
-            #rom {
-                grid-column: 4/5;
-                width: 11.25rem;
-            }
-            
-            #dog {
-                grid-column: 5/6;
-                width: 15rem;
-            }
-            
-            #info {
-                margin: 1.25rem;
-                padding: 0.625rem;
-                display: flex;
-                justify-content: flex-start;
-                align-items: baseline;
-            }
-            
-            #info i {
-                height: 20px;
-                width: 20px;
-                color: #0065fc;
-                margin-left: 5px;
-                border: 2px solid #f2f2f2;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            main {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-            }
-            
-            #hebergements {
-                background-color: #f2f2f2;
-                border-radius: 25px;
-                width: 60%;
-                padding: 1.5rem;
-                display: grid;
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end: 4;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 5.62rem 13rem 13rem 1.25rem;
-                grid-gap: 1.62rem;
-                ;
-            }
-            
-            #grid div {
-                height: 12.5rem;
-                width: 15.3rem;
-            }
-            
-            #hebergements a {
-                display: grid;
-                background-color: white;
-                border-radius: 25px;
-                width: 100%;
-                align-items: center;
-                justify-items: center;
-                color: black;
-            }
-            
-            #hebergements img {
-                width: 95%;
-                margin-top: 0.31rem;
-                height: 7.25rem;
-                object-fit: cover;
-                border-radius: 25px 25px 0px 0px;
-                flex-basis: 100%;
-                justify-self: center;
-            }
-            
-            #hebergements p {
-                margin: 0rem 0rem 0.625rem 1.2rem;
-                justify-self: flex-start;
-            }
-            
-            #titre {
-                grid-row: 1/2;
-                grid-column: 1/4;
-            }
-            
-            #cannebiere {
-                grid-column: 1/2;
-                grid-row: 2/3;
-            }
-            
-            #port {
-                grid-column: 2/3;
-                grid-row: 2/3;
-            }
-            
-            #mouettes {
-                grid-column: 3/3;
-                grid-row: 2/3;
-            }
-            
-            #mer {
-                grid-column: 1/2;
-                grid-row: 3/4;
-            }
-            
-            #panier {
-                grid-column: 2/3;
-                grid-row: 3/4;
-            }
-            
-            #amina {
-                grid-column: 3/3;
-                grid-row: 3/4;
-            }
-            
-            #plus {
-                grid-column: 1/3;
-                grid-row: 4/5;
-                margin-left: 1.25rem;
-            }
-            /*section populaire*/
-            
-            #pop {
-                width: 30%;
-                height: auto;
-                background-color: #f2f2f2;
-                border-radius: 25px;
-                display: grid;
-                grid-row-start: 1;
-                grid-row-end: 5;
-                grid-template-rows: 5.62rem 11.5625rem 11.5625rem 11.5625rem;
-                grid-template-columns: 1fr;
-                padding: 1.32rem;
-            }
-            
-            #pop h2 {
-                grid-row: 1/2;
-                align-self: center;
-                margin: 0rem;
-            }
-            
-            .iconpoptitre {
-                margin-bottom: 0.83rem;
-                justify-self: start;
-                align-self: center;
-                width: 1.25rem;
-                height: 1.25rem;
-                grid-column: 2/3;
-                grid-row: 1/2;
-            }
-            
-            #pop div {
-                background-color: white;
-                border-radius: 25px;
-                height: auto;
-                width: 100%;
-                height: 9rem;
-                grid-column-start: 1;
-                grid-column-end: 3;
-            }
-            
-            #pop div i {
-                grid-column: 2/3;
-                grid-row: 2/3;
-                margin-top: 2.75rem;
-                /* align-self: flex-end; */
-            }
-            
-            #pop a {
-                display: grid;
-                grid-template-columns: 7.6rem 12.5rem;
-                grid-template-rows: 39% 61%;
-                grid-column-gap: 0.31rem;
-                width: 100%;
-                color: black;
-            }
-            
-            #pop img {
-                margin: 0.31rem;
-                width: 7.5rem;
-                height: 8.4rem;
-                object-fit: cover;
-                justify-content: center;
-                grid-column: 1/2;
-                border-radius: 25px 0px 0px 25px;
-            }
-            
-            #pop p {
-                float: right;
-                width: 8rem;
-                flex-wrap: wrap;
-                margin-right: 3.01rem;
-                grid-column: 2/4;
-                margin-left: 1.25rem;
-            }
-            
-            #matin {
-                grid-row: 2/3;
-                grid-column: 1/3;
-            }
-            
-            #eau {
-                grid-row: 3/4;
-                grid-column: 1/3;
-            }
-            
-            #bb {
-                grid-row: 4/5;
-                grid-column: 1/3;
-            }
-            /*code css activités*/
-            
-            #activites {
-                width: 100%;
-            }
-            
-            #activites h2 {
-                max-width: 100%;
-                display: inline-block;
-                align-content: flex-start;
-            }
-            
-            #activites div {
-                height: 36.25rem;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-            
-            .grandecolonne {
-                width: 25%;
-            }
-            
-            .petitecolonne {
-                width: 25%;
-            }
-            
-            .margintop {
-                margin-top: 1.25rem;
-            }
-            
-            #activites img {
-                display: flex;
-                width: 18.75rem;
-                object-fit: cover;
-                align-items: center;
-                border-radius: 25px 25px 0px 0px;
-                ;
-            }
-            
-            #activites p {
-                width: 18.75rem;
-                height: 3.44rem;
-                border-radius: 0px 0px 25px 25px;
-                box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.39);
-                margin-top: 0px;
-            }
-            /*balises images*/
-            
-            .fortpaumegues {
-                height: 11.25rem;
-            }
-            
-            .ilesfrioul {
-                height: 6.87rem;
-                margin-top: 0.57rem;
-            }
-            
-            .Grandeimage {
-                height: 24.37rem;
-            }
-            
-            .NDdelaGarde {
-                height: 8.75rem;
-            }
-            
-            .Parclongchamp {
-                height: 9.37rem;
-            }
-            /*footer*/
-            
-            footer nav {
-                display: grid;
-                grid-template-columns: 30% 30% 30%;
-                width: 100%;
-            }
-            
-            #apropos {
-                grid-column: 1/2;
-            }
-            
-            #menuheb {
-                grid-column: 2/3;
-            }
-            
-            #assist {
-                grid-column: 3/4;
-            }
-            
-            footer h4 {
-                margin-left: 2.5rem;
-            }
-            /* media queries*/
-            
-            @media screen and (min-width:480px) and (max-width:1024px) {
-                #filtres {
-                    grid-template-rows: 1fr 1fr 1fr;
-                    grid-template-columns: 4.37rem 1fr 1fr 1fr;
-                }
-                #filtres h4 {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                }
-                #eco {
-                    grid-column: 4/5;
-                    grid-row: 2/3;
-                }
-                #fam {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                #rom {
-                    grid-column: 1/2;
-                    grid-row: 3/4;
-                }
-                #dog {
-                    grid-column: 4/5;
-                    grid-row: 3/4;
-                }
-                main {
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-                }
-                #hebergements {
-                    grid-gap: 1rem;
-                    grid-template-rows: 3.125rem 1fr 1fr 1fr 3.125rem;
-                    grid-template-columns: 50% 50%;
-                }
-                #hebergements h2 {
-                    grid-column: 1/3;
-                    grid-row: 1/2;
-                }
-                #cannebiere {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                #port {
-                    grid-column: 2/3;
-                    grid-row: 2/3;
-                }
-                #mouettes {
-                    grid-column: 1/2;
-                    grid-row: 3/4;
-                }
-                #mer {
-                    grid-column: 2/3;
-                    grid-row: 3/4;
-                }
-                #panier {
-                    grid-column: 1/2;
-                    grid-row: 4/5;
-                }
-                #amina {
-                    grid-column: 2/3;
-                    grid-row: 4/5;
-                }
-                #plus {
-                    grid-column: 1/2;
-                    grid-row: 5/6;
-                }
-                #pop {
-                    padding: 1rem;
-                    grid-template-rows: 3.125rem 15rem 15rem 15rem;
-                    grid-gap: 1.625rem;
-                }
-                #pop a {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr;
-                }
-                #pop img {
-                    width: 13.5rem;
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                    border-radius: 25px 25px 0px 0px;
-                }
-                #pop p {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                #pop div {
-                    width: 14rem;
-                    height: 15.5rem;
-                }
-                #pop div i {
-                    margin-top: 0rem;
-                }
-                #activites div {
-                    max-width: 100%;
-                    display: grid;
-                    grid-template-rows: 1fr 1fr;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    grid-gap: 1.25rem;
-                }
-                .premierelement {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                }
-                .deuxiemeelement {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                .troisiemeelement {
-                    grid-column: 2/3;
-                    grid-row: 1/2;
-                }
-                .quatriemeelement {
-                    grid-column: 2/3;
-                    grid-row: 2/3;
-                }
-                .cinquiemeelement {
-                    grid-column: 3/4;
-                    grid-row: 1/2;
-                }
-                .sixiemeelement {
-                    grid-column: 3/4;
-                    grid-row: 2/3;
-                }
-                #activites a {
-                    display: grid;
-                }
-                #activites a {
-                    display: grid;
-                    grid-template-rows: 11.25rem 3.12rem;
-                    grid-template-columns: auto;
-                }
-                #activites img {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                    height: 11.25rem;
-                }
-                #activites p {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                .margintop {
-                    margin: 0rem;
-                }
-                #hebergements {
-                    width: 50%;
-                }
-                .ilesfrioul {
-                    margin-top: 0rem;
-                }
-            }
-            
-            @media screen and (min-width:480px) and (max-width:800px) {
-                #activites {
-                    height: auto;
-                }
-                #activites div {
-                    max-width: 100%;
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    grid-gap: 1.25rem;
-                    height: auto;
-                }
-                .premierelement {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                }
-                .deuxiemeelement {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                .troisiemeelement {
-                    grid-column: 2/3;
-                    grid-row: 1/2;
-                }
-                .quatriemeelement {
-                    grid-column: 2/3;
-                    grid-row: 2/3;
-                }
-                .cinquiemeelement {
-                    grid-column: 1/2;
-                    grid-row: 3/4;
-                }
-                .sixiemeelement {
-                    grid-column: 2/2;
-                    grid-row: 3/4;
-                }
-                #activites a {
-                    display: grid;
-                }
-                #activites a {
-                    display: grid;
-                    grid-template-rows: 11.25rem 3.12rem;
-                    grid-template-columns: auto;
-                }
-                #activites img {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                    height: 11.25rem;
-                }
-                #activites p {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                .margintop {
-                    margin: 0rem;
-                }
-                #hebergements {
-                    width: 50%;
-                }
-                .ilesfrioul {
-                    margin-top: 0rem;
-                }
-                footer {
-                    margin-top: 4.5rem;
-                    height: auto;
-                }
-            }
-            
-            @media screen and (max-width:480px) {
-                #corpsdepage {
-                    margin: 0rem;
-                    width: 100%;
-                }
-                header {
-                    display: initial;
-                }
-                header nav {
-                    width: 100%;
-                    grid-template-rows: 1fr 1fr;
-                    grid-template-columns: 1fr 1fr;
-                }
-                #logo {
-                    display: grid;
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                    position: static;
-                }
-                .premierlien {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                    justify-self: center;
-                }
-                .secondlien {
-                    grid-column: 2/2;
-                    grid-row: 2/3;
-                    justify-self: center;
-                }
-                .troisiemelien {
-                    grid-column: 2/3;
-                    grid-row: 1/2;
-                    align-self: baseline;
-                    justify-self: end;
-                }
-                #bordures {
-                    display: flex;
-                    justify-content: center;
-                }
-                #bordurebleue50 {
-                    width: 50%;
-                    left: 0px;
-                    border-top: 3px solid #0065FC;
-                }
-                #borduregrise50 {
-                    top: 130px;
-                    width: 50%;
-                    border-top: 3px solid #f2f2f2;
-                    justify-content: end;
-                }
-                #bouttonrecherche button {
-                    display: none
-                }
-                #bouttonrecherche {
-                    width: 20.625rem;
-                    grid-template-columns: 16% 70% 14%;
-                }
-                .loupei {
-                    visibility: visible;
-                    width: 100%;
-                    grid-column: 3/4;
-                }
-                #filtres {
-                    display: inline-grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr 1fr 1fr 1fr;
-                    width: 100%;
-                    margin-top: 1.875rem;
-                    grid-gap: 1rem;
-                }
-                #filtres {
-                    grid-row: 1/2;
-                    grid-column: 1/2;
-                }
-                #eco {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                }
-                #fam {
-                    grid-column: 2/3;
-                    grid-row: 2/3;
-                }
-                #rom {
-                    grid-column: 1/2;
-                    grid-row: 3/4;
-                }
-                #dog {
-                    grid-column: 1/3;
-                    grid-row: 4/5;
-                }
-                main {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 0rem;
-                    width: 100%;
-                }
-                #pop {
-                    order: 1;
-                    width: 100%;
-                    padding: 0rem;
-                    row-gap: 1.25rem;
-                    column-gap: 1.25rem;
-                    padding-bottom: 1.25rem;
-                }
-                #pop div {
-                    margin: 0rem 1.25rem 0rem 1.25rem;
-                    width: 90%;
-                }
-                #hebergements {
-                    order: 2;
-                    width: 100%;
-                    row-gap: 1.25rem;
-                    column-gap: 1.25rem;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 3.125rem 1fr 1fr 1fr 1fr 1fr 1fr 3.125rem;
-                    background-color: white;
-                    margin: 0rem;
-                    padding: 0rem;
-                }
-                #hebergements a {
-                    width: 100%;
-                    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.39);
-                }
-                #hebergements h2 {
-                    grid-column: 1/3;
-                    grid-row: 1/2;
-                }
-                #cannebiere {
-                    grid-column: 1/3;
-                    grid-row: 2/4;
-                }
-                #port {
-                    grid-column: 1/3;
-                    grid-row: 3/4;
-                }
-                #mouettes {
-                    grid-column: 1/3;
-                    grid-row: 4/5;
-                }
-                #mer {
-                    grid-column: 1/3;
-                    grid-row: 5/6;
-                }
-                #panier {
-                    grid-column: 1/3;
-                    grid-row: 6/7;
-                }
-                #amina {
-                    grid-column: 1/3;
-                    grid-row: 7/8
-                }
-                #hebergements h4 {
-                    display: flex;
-                    grid-column: 1/3;
-                    grid-row: 8/9;
-                    justify-content: left;
-                }
-                #activites {
-                    height: auto;
-                    margin-top: 1.625rem;
-                }
-                #activites div {
-                    max-width: 100%;
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    grid-gap: 1.25rem;
-                    padding: 1.25rem;
-                    height: auto;
-                }
-                #activites a {
-                    width: 100%;
-                    height: 11.92rem;
-                }
-                #activites img {
-                    width: 20.62rem;
-                    height: 8.125rem;
-                }
-                #activites p {
-                    width: 20.62rem;
-                }
-                .premierelement {
-                    grid-column: 1/3;
-                    grid-row: 1/2;
-                }
-                .deuxiemeelement {
-                    grid-column: 1/3;
-                    grid-row: 2/3;
-                }
-                .troisiemeelement {
-                    grid-column: 1/3;
-                    grid-row: 3/4;
-                }
-                .quatriemeelement {
-                    grid-column: 1/3;
-                    grid-row: 4/5;
-                }
-                .cinquiemeelement {
-                    grid-column: 1/3;
-                    grid-row: 5/6;
-                }
-                .sixiemeelement {
-                    grid-column: 1/3;
-                    grid-row: 6/7;
-                }
-                .margintop {
-                    margin: 0rem;
-                }
-                .ilesfrioul {
-                    margin-top: 0rem;
-                }
-                footer nav {
-                    display: inline-grid;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    grid-template-columns: 100%;
-                    width: 100%;
-                }
-                #apropos {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                    width: 100%;
-                }
-                #menuheb {
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                    width: 100%;
-                }
-                #assist {
-                    grid-column: 1/2;
-                    grid-row: 3/4;
-                    width: 100%;
-                }
-                footer a {
-                    color: black;
-                }
-                footer ul {
-                    width: 100%;
-                }
-                footer h4 {
-                    margin-left: 2.4rem;
-                }
-            }
+/*DOCTYPE CSS*/
+
+
+/*Title: style.css*/
+
+
+/*Projet Reservia OpenClassroom*/
+
+
+/*Ludovig Queffelec*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+.margin {
+    margin: 1.25rem;
+}
+
+.colorBlue {
+    color: #0065fc
+}
+
+.colorBlack {
+    color: black;
+}
+
+.colorGrey {
+    color: #f2f2f2
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Raleway;
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+/*suppression de la décoration sous lien*/
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+
+/*marge des sections hors footer*/
+
+#corpsdepage {
+    margin: 1.25rem;
+}
+
+
+/*menu d'en tete*/
+
+
+/*déclation de la grille navigation*/
+
+nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 67% 11% 11% 11%;
+}
+
+#lienactivites {
+    color: black;
+}
+
+#lienHerbergement {
+    color: #0065fc;
+}
+
+#logo {
+    width: 6.25rem;
+    height: 3.17rem;
+    grid-column: 1/2
+}
+
+.premierlien {
+    grid-column: 2/3;
+    justify-self: right;
+}
+
+.secondlien {
+    grid-column: 3/4;
+    justify-self: right;
+}
+
+.troisiemelien {
+    grid-column: 4/5;
+    justify-self: right;
+    align-self: center;
+    font-weight: bolder;
+    color: #0065FC;
+}
+
+.a {
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+
+/*boutton de recherche*/
+
+#bouttonrecherche {
+    display: grid;
+    grid-template-columns: 12% 56% 32%;
+    width: 26.25rem;
+    height: 3.125rem;
+    border-radius: 15px;
+    padding: 0px;
+    border: 1px #f2f2f2 solid;
+}
+
+.firsticon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFF;
+    width: 100%;
+    height: 3.125rem;
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    margin: 0px;
+    z-index: 1;
+    grid-column: 1/2;
+}
+
+#bouttonrecherche input {
+    border: none;
+    height: 3.125rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: "Raleway";
+    margin: 0px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    grid-column: 2/3;
+}
+
+#bouttonrecherche button {
+    align-items: center;
+    justify-content: center;
+    height: 3.125rem;
+    width: 100%;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    font-family: "Raleway";
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0px;
+    z-index: 1;
+    grid-column: 3/4;
+}
+
+
+/*loupe pour la version responsive*/
+
+.loupei {
+    display: flex !important;
+    visibility: hidden;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+
+/*déclaration pour le survol des liens*/
+
+#filtres :hover {
+    background-color: #f2f2f2;
+}
+
+#filtres :hover>i {
+    background-color: #f2f2f2;
+    color: #0065fc;
+}
+
+#filtres :hover>h4 {
+    background-color: #f2f2f2;
+}
+
+
+/*filtres de recherche*/
+
+
+/*déclaration de la grille pour les filtres*/
+
+#filtres {
+    display: inline-grid;
+    grid-template-columns: 4.37rem 1fr 1fr 1fr 1fr;
+    width: 65%;
+    margin-top: 1.875rem;
+    grid-column-gap: 1.625rem;
+}
+
+#filtres div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid #f2f2f2 3px;
+    border-left: none;
+    border-radius: 25px;
+    height: 3.125rem;
+}
+
+#filtres i {
+    background-color: #0065FC;
+    color: #f2f2f2;
+    border-radius: 25px;
+    width: 3.5rem;
+    height: 3.25rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filtres h3 {
+    font-weight: bold;
+    justify-self: left;
+}
+
+#eco {
+    grid-column: 2/3;
+    width: 11.875rem;
+}
+
+#fam {
+    grid-column: 3/4;
+    width: 9.375rem;
+}
+
+#rom {
+    grid-column: 4/5;
+    width: 11.25rem;
+}
+
+#dog {
+    grid-column: 5/6;
+    width: 15rem;
+}
+
+#info {
+    margin: 1.25rem;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+/*encart informatif*/
+
+#info i {
+    height: 20px;
+    width: 20px;
+    color: #0065fc;
+    margin-left: 5px;
+    border: 2px solid #f2f2f2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*corps de page*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+/*declaration pour la section hebergement, déclaration de la grille*/
+
+#hebergements {
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    width: 60%;
+    padding: 1.5rem;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5.62rem 13rem 13rem 1.25rem;
+    grid-gap: 1.62rem;
+    ;
+}
+
+#grid div {
+    height: 12.5rem;
+    width: 15.3rem;
+}
+
+#hebergements a {
+    display: grid;
+    background-color: white;
+    border-radius: 25px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    color: black;
+}
+
+#hebergements img {
+    width: 95%;
+    margin-top: 0.31rem;
+    height: 7.25rem;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    justify-self: center;
+}
+
+#hebergements h5 {
+    margin: 0rem 0rem 0.625rem 1.2rem;
+    justify-self: flex-start;
+    height: 65%;
+}
+
+
+/*declaration des elements de la grille */
+
+#titre {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+#cannebiere {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#port {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#mouettes {
+    grid-column: 3/3;
+    grid-row: 2/3;
+}
+
+#mer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#panier {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#amina {
+    grid-column: 3/3;
+    grid-row: 3/4;
+}
+
+#plus {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin-left: 1.25rem;
+}
+
+
+/*section populaire*/
+
+
+/*declaration de la grille*/
+
+#pop {
+    width: 30%;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-template-rows: 5.62rem 11.5625rem 11.5625rem 11.5625rem;
+    grid-template-columns: 1fr;
+    padding: 1.32rem;
+}
+
+#titrePop {
+    display: flex;
+    grid-row: 1/2;
+    justify-content: space-between;
+    margin: 0rem;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.iconpoptitre {
+    width: 1.25rem;
+    height: 1.25rem;
+    grid-column: 1/2;
+    margin-top: 8%;
+}
+
+
+/*declaration de la grille interieure*/
+
+.encarts {
+    background-color: white;
+    border-radius: 25px;
+    height: auto;
+    width: 100%;
+    height: 9rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/*declaration des elements dans la grille interne*/
+
+.encarts i {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 2.75rem;
+}
+
+.encarts a {
+    display: grid;
+    grid-template-columns: 7.6rem 12.5rem;
+    grid-template-rows: 39% 61%;
+    grid-column-gap: 0.31rem;
+    width: 100%;
+    color: black;
+}
+
+.encarts img {
+    margin: 0.31rem;
+    width: 7.5rem;
+    height: 8.4rem;
+    object-fit: cover;
+    justify-content: center;
+    grid-column: 1/2;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.encarts h5 {
+    float: right;
+    width: 8rem;
+    flex-wrap: wrap;
+    margin-right: 3.01rem;
+    grid-column: 2/4;
+    margin-left: 1.25rem;
+}
+
+#matin {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+#eau {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+#bb {
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+
+
+/*code css activités*/
+
+
+/*titre des activites*/
+
+#titreAct {
+    max-width: 100%;
+    display: inline-block;
+    align-content: flex-start;
+}
+
+
+/*dimension des boites*/
+
+#activites {
+    width: 100%;
+}
+
+#corpsarticle {
+    height: 36.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*classes colonnes pour mise en page*/
+
+.grandecolonne {
+    width: 25%;
+}
+
+.petitecolonne {
+    width: 25%;
+}
+
+.margintop {
+    margin-top: 2.25rem;
+}
+
+
+/*caracteristiques des elements*/
+
+#corpsarticle img {
+    display: flex;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+    grid-row: 1/2;
+}
+
+#corpsarticle a {
+    display: grid;
+    grid-template-rows: 1fr 3.44rem;
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 25px 25px 25px 25px;
+}
+
+#corpsarticle h5 {
+    width: 90%;
+    height: 3.44rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    grid-row: 2/3;
+}
+
+
+/*balises images*/
+
+.fortpaumegues {
+    height: 11.25rem;
+}
+
+.ilesfrioul {
+    height: 6.87rem;
+    margin-top: 0.57rem;
+}
+
+.Grandeimage {
+    height: 24.37rem;
+}
+
+.NDdelaGarde {
+    height: 8.75rem;
+}
+
+.Parclongchamp {
+    height: 9.37rem;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #f2f2f2;
+    margin: 0px !important;
+    width: 100%;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    width: 100%;
+}
+
+footer a {
+    color: black;
+}
+
+#apropos {
+    grid-column: 1/2;
+}
+
+#menuheb {
+    grid-column: 2/3;
+}
+
+#assist {
+    grid-column: 3/4;
+}
+
+footer h4 {
+    margin-left: 2.5rem;
+}
+
+
+/* media queries*/
+
+
+/*media queries ecrans basses definition, tablettes*/
+
+@media screen and (min-width:480px) and (max-width:1024px) {
+    #corpsdepage {
+        margin: 1rem;
+    }
+    /*reformatage des filtres*/
+    #filtres {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 4.37rem 1fr 1fr 1fr;
+    }
+    #filtres h3 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #eco {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    #fam {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #rom {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #dog {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    main {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    /*formatage de la grille herbergement pour adaptation*/
+    #hebergements {
+        grid-gap: 1rem;
+        grid-template-rows: 7.5% 1fr 1fr 1fr 3.125rem;
+        grid-template-columns: 50% 50%;
+    }
+    #herbergments h5 {
+        height: 15rem;
+    }
+    #hebergements h2 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #cannebiere {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #port {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #mouettes {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #mer {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #panier {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #amina {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #plus {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #pop {
+        padding: 1rem;
+        grid-template-rows: 3.125rem 15rem 15rem 15rem;
+        gap: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    #titrePop {
+        height: auto;
+    }
+    /*formatage de pop*/
+    #titrePop i {
+        margin-top: 18%;
+    }
+    .encarts a {
+        grid-template-columns: 1fr;
+        grid-template-rows: 8.4rem 5.5rem;
+    }
+    .encarts img {
+        width: 95%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 25px 25px 0px 0px;
+        justify-self: center;
+    }
+    .encarts h5 {
+        width: 93%;
+        height: 4.5rem;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        flex-wrap: wrap;
+    }
+    .encarts {
+        width: 85%;
+        height: 15.5rem;
+        padding: 0.125rem;
+    }
+    .encarts i {
+        margin-top: 1.5rem;
+    }
+    #corpsarticle {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.5%;
+    }
+    .flexcenter {
+        display: initial;
+    }
+    .premierelement {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .deuxiemeelement {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .troisiemeelement {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .quatriemeelement {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .cinquiemeelement {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .sixiemeelement {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #activites a {
+        display: grid;
+    }
+    #activites a {
+        display: grid;
+        background-color: white;
+        border-radius: 25px;
+        grid-template-rows: 11.25rem 3.12rem;
+        grid-template-columns: auto;
+        width: 15.5rem;
+    }
+    #activites img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 11.25rem;
+        width: 15.5rem;
+    }
+    #activites h5 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .margintop {
+        margin: 0rem;
+    }
+    #hebergements {
+        width: 50%;
+    }
+    .ilesfrioul {
+        margin-top: 0rem;
+    }
+}
+
+
+/*responsive pour tablettes et smartphones en landscape*/
+
+@media screen and (min-width:480px) and (max-width:800px) {
+    #activites {
+        height: auto;
+    }
+    #corpsarticle {
+        max-width: 100%;
+        width: 82%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.25rem;
+        height: auto;
+    }
+    .premierelement {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .deuxiemeelement {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .troisiemeelement {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .quatriemeelement {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .cinquiemeelement {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .sixiemeelement {
+        grid-column: 2/2;
+        grid-row: 3/4;
+    }
+    #activites a {
+        display: grid;
+    }
+    #activites a {
+        display: grid;
+        grid-template-rows: 11.25rem 3.12rem;
+        grid-template-columns: auto;
+    }
+    .flexcenter {
+        display: initial;
+    }
+    #activites img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 11.25rem;
+    }
+    #activites h5 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .margintop {
+        margin: 0rem;
+    }
+    #hebergements {
+        width: 50%;
+    }
+    .ilesfrioul {
+        margin-top: 0rem;
+    }
+    footer {
+        margin-top: 4.5rem;
+        height: auto;
+    }
+}
+
+
+/*responsive pour ecrans basse definition*/
+
+@media screen and (max-width:480px) {
+    #corpsdepage {
+        margin: 0rem;
+        width: 100%;
+    }
+    header {
+        display: initial;
+    }
+    header nav {
+        width: 100%;
+        grid-template-rows: 1fr 1fr 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #logo {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        position: static;
+    }
+    .premierlien {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+    }
+    .secondlien {
+        grid-column: 2/2;
+        grid-row: 2/3;
+        justify-self: center;
+    }
+    .troisiemelien {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: baseline;
+        justify-self: end;
+    }
+    #bordurebleue50 {
+        width: 100%;
+        border-top: 5px solid #0065FC;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #borduregrise50 {
+        width: 100%;
+        border-top: 5px solid #f2f2f2;
+        grid-column: 2/2;
+        grid-row: 3/4;
+    }
+    #bouttonrecherche button {
+        display: none
+    }
+    #bouttonrecherche {
+        width: 20.625rem;
+        grid-template-columns: 16% 70% 14%;
+    }
+    .loupei {
+        visibility: visible;
+        width: 100%;
+        grid-column: 3/4;
+    }
+    #filtres {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        margin-top: 1.875rem;
+        grid-gap: 1rem;
+    }
+    #filtres {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #eco {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #fam {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #rom {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #dog {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0rem;
+        width: 100%;
+    }
+    #pop {
+        order: 1;
+        width: 100%;
+        padding: 0rem;
+        row-gap: 1.25rem;
+        column-gap: 1.25rem;
+        padding-bottom: 1.25rem;
+        border-radius: 0px;
+    }
+    #pop div {
+        margin: 0rem 1.25rem 0rem 1.25rem;
+        width: 90%;
+    }
+    #hebergements {
+        order: 2;
+        width: 100%;
+        row-gap: 1.25rem;
+        column-gap: 1.25rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3.125rem 1fr 1fr 1fr 1fr 1fr 1fr 3.125rem;
+        background-color: white;
+        margin: 1.25rem;
+        padding: 0rem;
+        border-radius: 0px;
+    }
+    #herbergements div {
+        width: 89.3%;
+    }
+    #hebergements a {
+        width: 88%;
+        box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.39);
+    }
+    #titre {
+        justify-self: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #cannebiere {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    #port {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    #mouettes {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    #mer {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    #panier {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    #amina {
+        grid-column: 1/3;
+        grid-row: 7/8
+    }
+    #plus {
+        display: flex;
+        grid-column: 1/3;
+        grid-row: 8/9;
+        justify-content: left;
+    }
+    #activites {
+        height: auto;
+        margin-top: 1.625rem;
+    }
+    #titreAct {
+        text-align: center;
+        width: 100%;
+    }
+    #corpsarticle {
+        max-width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-gap: 1.25rem;
+        padding: 1.25rem;
+        height: auto;
+        margin-right: 1.95rem;
+    }
+    #corpsarticle article {
+        width: 100%;
+        margin-left: 0rem;
+    }
+    #activites a {
+        width: 100%;
+        height: 11.92rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: white;
+        border-radius: 25px;
+    }
+    #activites img {
+        width: 100%;
+        height: 8.125rem;
+    }
+    #activites h5 {
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        grid-row: 2/3;
+    }
+    .premierelement {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .deuxiemeelement {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .troisiemeelement {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .quatriemeelement {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .cinquiemeelement {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .sixiemeelement {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    .flexcenter {
+        display: initial;
+    }
+    .margintop {
+        margin: 0rem;
+    }
+    .ilesfrioul {
+        margin-top: 0rem;
+    }
+    footer nav {
+        display: inline-grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    #apropos {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    #menuheb {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+    #assist {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+    }
+    footer a {
+        color: black;
+    }
+    footer ul {
+        width: 100%;
+    }
+    footer h4 {
+        margin-left: 2.4rem;
+    }
+}
