@@ -34,6 +34,8 @@ body {
     font-family: Raleway;
     font-size: 16px;
     margin: 0px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 
@@ -52,8 +54,6 @@ strong {
 
 #corpsdepage {
     margin: 1.25rem;
-    max-width: 1440px;
-    margin: auto;
 }
 
 
@@ -584,7 +584,6 @@ main {
 
 footer {
     max-width: 1440px;
-    margin: auto;
     background-color: #f2f2f2;
     margin: 0px !important;
     width: 100%;
@@ -623,8 +622,10 @@ footer h4 {
 /*media queries ecrans basses definition, tablettes*/
 
 @media screen and (min-width:480px) and (max-width:1024px) {
-    #corpsdepage {
+    body {
         max-width: 100%;
+    }
+    #corpsdepage {
         margin: 1rem;
     }
     /*reformatage des filtres*/
@@ -801,15 +802,15 @@ footer h4 {
     .ilesfrioul {
         margin-top: 0rem;
     }
-    footer {
-        max-width: 100%;
-    }
 }
 
 
 /*responsive pour tablettes et smartphones en landscape*/
 
 @media screen and (min-width:480px) and (max-width:800px) {
+    body {
+        max-width: 100%;
+    }
     #activites {
         height: auto;
     }
@@ -885,8 +886,10 @@ footer h4 {
 /*responsive pour ecrans basse definition*/
 
 @media screen and (max-width:480px) {
-    #corpsdepage {
+    body {
         max-width: 100%;
+    }
+    #corpsdepage {
         width: 100%;
     }
     header {
@@ -1116,9 +1119,6 @@ footer h4 {
     }
     .ilesfrioul {
         margin-top: 0rem;
-    }
-    footer {
-        max-width: 100%;
     }
     footer nav {
         display: inline-grid;
